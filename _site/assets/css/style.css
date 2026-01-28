@@ -1,0 +1,98 @@
+:root {
+  --bg: #f7f5f2;
+  --text: #1f1f1f;
+  --accent: #c8b6a6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+nav a{color:var(--accent);}
+.logo {
+  font-weight: bold;
+}
+
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  margin: 1rem 0 2rem;
+}
+
+.btn-primary {
+  background: var(--text);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.trust {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.services, .gallery, .location{
+  padding: 4rem 2rem;
+}
+.services {
+  text-align: center;
+}
+.services img{width: 50px;height: 50px;}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.img-placeholder {
+  background: #ddd;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+}
+
+.booking {
+  text-align: center;
+  padding: 4rem 2rem;
+}
