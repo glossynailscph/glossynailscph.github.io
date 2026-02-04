@@ -9,6 +9,7 @@ body{margin:0;font-size:1.2rem;font-family:"Cormorant Garamond", serif;
   background:var(--bg);color:var(--text)}
 main{max-width:1000px;margin:0 auto}
 h1,h2{font-family:"Montserrat", sans-serif;font-weight:normal}
+h2{font-size:2rem}
 .announcement{background:pink;border-bottom:2px solid deeppink;padding:.5rem;text-align:center;
   span{display:none}}
 header,footer{padding:1rem 2rem}
@@ -22,24 +23,25 @@ nav,.logo{text-align:center}
   address{font-size:larger;padding-bottom:1rem}
   video{clip-path:rect(20% 100% 100% 0 round 20px);max-width:100%}}
 .subtitle{margin:1rem 0 2rem}
-.btn-primary{background:var(--primary);color:white;font-weight:bold;
-  font-size:1.4rem;padding:.7rem 2rem;text-decoration:none}
+.btn-primary{background:var(--primary);border:1px solid black;color:black;font-weight:bold;
+  font-size:1.4rem;padding:.7rem 2rem;text-decoration:none;border-radius:5px}
 .trust{text-align:center}
-.trust .trust-item{padding:1rem 0 0 1.7rem}
 .trust .star{font-size:24px}
 .icon{width:24px;height:24px;fill:currentColor}
 .trust,.compare{padding:2rem}
 .services,.gallery,.contact{padding:4rem 2rem}
 .intro{padding:1rem;text-align:center;font-size:1.4rem;max-width:900px}
 .gallery-grid img{max-width:100%}
+.gallery-grid p{padding-right:1rem}
 .services{text-align:center}
 .services img{width:50px;height:50px}
 .service-grid{display:grid;
   grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
   gap:2rem;margin-top:2rem}
 .service-card{background:white;padding:2rem}
+.service-card{p,ul{text-align:left}}
 
-.hero-content,main img,.btn-primary,.service-card{border-radius:20px}
+.hero-content,main img,.service-card{border-radius:1.5rem}
 
 .contact-intro img{max-width:100%}
 .contact address{font-size:1.5rem}
@@ -54,7 +56,7 @@ nav,.logo{text-align:center}
   .trust,.contact{display:flex;justify-content:center;gap:2rem}
   .intro{padding:4rem}
   .gallery-grid{display:flex;align-items:left;gap:1rem;
-    img{max-width:300px}}
+    img{max-width:222px}}
   .contact-intro{max-width:30%}
 }
 .comparison {
