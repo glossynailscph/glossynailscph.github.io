@@ -10,15 +10,16 @@ description: Modern nail studio in Copenhagen. Manicure, gel, BIAB and nail art.
     <address>📍 Virkelund Allé, Albertslund 2620, Copenhagen</address>
     <p class="book"><a href="tel:+4526216916" class="btn-primary">Book Time</a>
   </div>
-  <video src="/assets/images/studio.mp4" controls autoplay loop muted></video>
+  <video src="/assets/images/studio.mp4" autoplay
+    onended="++this.i<3&&(this.currentTime=0,this.play())"></video>
 </section>
 
 <section class="trust">
-  <div>Clean designs</div>
-  <div>• &nbsp; Glossy finish</div>
-  <div>• &nbsp; Perfect details</div>
-  <div>• &nbsp; Calm precision</div>
-  <div>• &nbsp; Hygiene first</div>
+  <div>Clean designs
+    • Glossy finish
+    • Perfect details
+    • Calm precision
+    • Hygiene first</div>
 </section>
 
 <section class="intro">
@@ -99,10 +100,10 @@ description: Modern nail studio in Copenhagen. Manicure, gel, BIAB and nail art.
 
 <section class="gallery">
   <div class="gallery-grid">
-    <img src="/assets/images/g1.jpg" alt="" />
-	  <img src="/assets/images/g2.jpg" alt="" />
-    <img src="/assets/images/g3.jpg" alt="" />
-    <img src="/assets/images/g4.jpg" alt="" />
+      <a href="/assets/images/g1.jpg"><img src="/assets/images/g1.jpg" alt="" /></a>
+	  	<a href="/assets/images/g2.jpg"><img src="/assets/images/g2.jpg" alt="" /></a>
+      <a href="/assets/images/g3.jpg"><img src="/assets/images/g3.jpg" alt="" /></a>
+      <a href="/assets/images/g4.jpg"><img src="/assets/images/g4.jpg" alt="" /></a>
   </div>
 </section>
 

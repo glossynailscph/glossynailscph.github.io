@@ -19,15 +19,16 @@ address{text-transform:uppercase;font-style: normal}
 nav a,.contact a{color:#333}
 nav a{text-decoration:none;border-bottom:1px solid #333;text-transform:uppercase;margin-right:1em}
 nav,.logo{text-align:center}
-.hero{padding:0 1rem;text-align:center;
+.hero{padding:1rem;text-align:center;
   address{padding-bottom:1rem}
-  video{clip-path:rect(20% 100% 100% 0 round 20px);max-width:100%}}
+  video{border-radius:20px;max-width:100%}}
+.hero-content{padding:2rem 0}
 .subtitle{text-align:right;font-size:.9rem;position:relative;top:-1.2rem}
 .btn-primary{background:var(--primary);border:1px solid #333;color:#333;font-weight:bold;
   font-size:1.4rem;padding:.7rem 2rem;text-decoration:none;border-radius:5px}
 .trust{text-align:center;text-transform:uppercase}
 .icon{width:24px;height:24px;fill:currentColor}
-.trust,.compare{padding:2rem}
+.trust{padding:2rem}
 .services,.gallery,.contact{padding:4rem 2rem}
 .intro{padding:1rem;text-align:center;font-size:1.4rem;max-width:900px}
 .gallery-grid img{max-width:100%}
@@ -46,23 +47,11 @@ nav,.logo{text-align:center}
 .contact address{font-size:1.5rem}
 .booking{text-align:center;padding:4rem 2rem}
 
-@media (min-width: 768px) {
-  .announcement span{display:inline-block}
-  .hero{display:flex;justify-content:center;align-items:center;padding:0;text-align:left;
-    video{max-width:45%;position:relative;top:-60px}
-    h1{font-size:2.5rem}}
-  .hero-content{background:rgba(251,249,235,.8);padding:2rem;position:relative;left:60px;z-index:99}
-  .trust,.contact{display:flex;justify-content:center;gap:2rem}
-  .trust{gap:1rem}
-  .intro{padding:4rem}
-  .gallery-grid{display:flex;align-items:left;gap:1rem;
-    img{max-width:222px}}
-  .contact-intro{max-width:30%}
-}
 .comparison {
 	position: relative;
 	overflow: hidden;
   border-radius: 1rem;
+  margin:0 1rem;
 	.lhs, .lhs-wrapper{position:absolute;top:0;left:0}
 	.lhs{display:block;max-width:none}
 	.lhs-wrapper{height:100%;width:50%;overflow:hidden}
@@ -104,5 +93,20 @@ nav,.logo{text-align:center}
   .lhs .caption{right:auto;left:1.5rem}
 }
 
+
+@media (min-width: 768px) {
+  .announcement span{display:inline-block}
+  .hero{display:flex;justify-content:center;align-items:center;text-align:left;
+    video{max-width:45%}
+    h1{font-size:2.5rem}}
+  .hero-content{background:rgba(251,249,235,.8);padding:2rem;position:relative;left:60px;z-index:99}
+  .trust,.contact{display:flex;justify-content:center;gap:2rem}
+  .trust{gap:1rem}
+  .intro{padding:4rem}
+  .gallery-grid{display:flex;align-items:left;gap:1rem;
+    img{max-width:222px}}
+  .contact-intro{max-width:30%}
+  .comparison{margin:0 8em}
+}
 
 
