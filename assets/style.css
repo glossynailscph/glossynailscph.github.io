@@ -17,6 +17,7 @@ footer{background:black;color:white;text-align:center;
   a{padding-right:1rem}}
 address{text-transform:uppercase;font-style: normal}
 nav a,.contact a{color:#333}
+nav a:first-child{border-bottom:0}
 nav a{text-decoration:none;border-bottom:1px solid #333;text-transform:uppercase;margin-right:1em}
 nav,.logo{text-align:center}
 .hero{padding:1rem;text-align:center;
