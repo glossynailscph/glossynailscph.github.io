@@ -4,15 +4,15 @@ lang: en
 title: Glossy Nails Copenhagen | Manicure, Gel & BIAB Nails
 description: Modern nail studio in Copenhagen. Manicure, gel, BIAB and nail art. Online booking available.
 message: "Limited Offer: nails + manicure only 300,-DKK"
-nav: <a href="/dk">DK</a> <a href="#services">Services</a> <a href="https://www.fresha.com/book-now/glossy-nails-cph-pee3i3lq/all-offer?share=true&pId=2785545" target="_blank" rel="noopener">Book</a> <a href="#contact">Contact</a>
+nav: <a href="/dk">🇩🇰</a> <a href="#services">Services</a> <a href="#booking">Book</a> <a href="#contact">Contact</a>
 site_name: Glossy Nails Copenhagen
 ---
 
 <section class="hero">
   <div class="hero-content">
     <h1>Premium nail care, beautiful details, best&nbsp;price</h1>
-    <address>📍 Virkelund Allé, Albertslund 2620, Copenhagen</address>
-    <p class="book"><a href="tel:+4526216916" class="btn-primary">Book Time</a>
+    <address>📍 {{ site.street }}, Albertslund&nbsp;2620, Copenhagen</address>
+    <p class="book"><a href="{{ site.booking }}" class="btn-primary" target="_blank">Book Time</a>
   </div>
   <video src="/assets/images/studio.mp4" autoplay
     onended="++this.i<3&&(this.currentTime=0,this.play())"></video>
@@ -51,7 +51,7 @@ site_name: Glossy Nails Copenhagen
   <h2>Our Services</h2>
   <div class="service-grid">
     <div class="service-card">
-      <!--img src="/assets/images/icons/file.svg" alt=""-->
+      <img src="/assets/images/icons/file.svg" alt="">
       <h3>Manicure</h3>
       <p>Clean shape. Healthy nails.</p>
       <ul>
@@ -63,7 +63,7 @@ site_name: Glossy Nails Copenhagen
     </div>
 
     <div class="service-card">
-      <!--img src="/assets/images/icons/nail-polish2.svg" alt=""-->
+      <img src="/assets/images/icons/nail-polish2.svg" alt="">
       <h3>Gel & BIAB</h3>
       <p>Strength meets beauty.
       <ul>
@@ -75,7 +75,7 @@ site_name: Glossy Nails Copenhagen
     </div>
 
     <div class="service-card">
-      <!--img src="/assets/images/icons/manicure2.svg" alt=""-->
+      <img src="/assets/images/icons/manicure2.svg" alt="">
       <h3>Nail Art</h3>
       <p>Minimal. Modern. You.
       <ul>
@@ -115,12 +115,7 @@ site_name: Glossy Nails Copenhagen
   <h2>Book Your Appointment</h2>
   <p>Online booking available 24/7. Booking your appointment is quick and easy.<br>
     Choose your service, date and time online and receive instant confirmation.</p>
-  <p><br><a href="https://www.fresha.com/book-now/glossy-nails-cph-pee3i3lq/all-offer?share=true&pId=2785545"
-   class="btn-primary"
-   target="_blank"
-   rel="noopener">
-   Book Online
-</a>
+  <p><br><a href="{{ site.booking }}" class="btn-primary" target="_blank">Book Time</a>
 </section>
 
 <section id="contact" class="contact">
@@ -133,18 +128,18 @@ site_name: Glossy Nails Copenhagen
       <div class="contact-item">
         <h3>Address</h3>
         <address>
-          Virkelund Allé 5<br>
+          {{ site.street }} 5<br>
           2620 Albertslund<br>
           Denmark
         </address>
       </div>
       <div class="contact-item">
         <h3>Phone</h3>
-        <p><a href="tel:+4526216916">+45 26 21 69 16</a></p>
+        <p><a href="tel:{{ site.phone| replace: ' ', '' }}">{{ site.phone }}</a></p>
       </div>
       <div class="contact-item">
         <h3>Email</h3>
-        <p><a href="mailto:nikol.kuzmikoba@gmail.com">nikol.kuzmikoba@gmail.com</a></p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       </div>
     </div>
 </section>

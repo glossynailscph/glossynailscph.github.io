@@ -3,16 +3,16 @@ layout: default
 lang: dk
 title: Glossy Nails København | Manicure, Gel & BIAB Negle
 description: Moderne neglesalon i København. Manicure, gel, BIAB og nail art. Online booking tilgængelig.
-message: "Begrænset tilbud: negle + manicure kun 300,- DKK"
-nav: <a href="/">🏴󠁧󠁢󠁥󠁮󠁧󠁿</a> <a href="#services">Behandlinger</a> <a href="#booking">Book tid</a> <a href="#contact">Kontakt</a>
+message: "Specialtilbud: Negle + manicure 300,-"
+nav: <a href="/">🇬🇧</a> <a href="#services">Ydelser</a> <a href="#booking">Book</a> <a href="#contact">Kontakt</a>
 site_name: Glossy Nails København
 ---
 
 <section class="hero">
   <div class="hero-content">
     <h1>Eksklusiv neglepleje, smukke detaljer, bedste&nbsp;pris</h1>
-    <address>📍 Virkelund Allé, Albertslund 2620, København</address>
-    <p class="book"><a href="tel:+4526216916" class="btn-primary">Book tid</a>
+    <address>📍 {{ site.street }}, Albertslund&nbsp;2620, København</address>
+    <p class="book"><a href="{{ site.booking }}" class="btn-primary" target="_blank">Book tid</a>
   </div>
   <video src="/assets/images/studio.mp4" autoplay
     onended="++this.i<3&&(this.currentTime=0,this.play())"></video>
@@ -51,7 +51,7 @@ site_name: Glossy Nails København
   <h2>Vores behandlinger</h2>
   <div class="service-grid">
     <div class="service-card">
-      <!--img src="/assets/images/icons/file.svg" alt=""-->
+      <img src="/assets/images/icons/file.svg" alt="">
       <h3>Manicure</h3>
         <p>Ren form. Sunde negle.</p>
         <ul>
@@ -63,7 +63,7 @@ site_name: Glossy Nails København
     </div>
 
     <div class="service-card">
-      <!--img src="/assets/images/icons/nail-polish2.svg" alt=""-->
+      <img src="/assets/images/icons/nail-polish2.svg" alt="">
       <h3>Gel & BIAB</h3>
       <p>Styrke møder skønhed.</p>
       <ul>
@@ -75,7 +75,7 @@ site_name: Glossy Nails København
     </div>
 
     <div class="service-card">
-      <!--img src="/assets/images/icons/manicure2.svg" alt=""-->
+      <img src="/assets/images/icons/manicure2.svg" alt="">
       <h3>Nail Art</h3>
       <p>Minimalistisk. Moderne. Dig.</p>
       <ul>
@@ -116,7 +116,7 @@ site_name: Glossy Nails København
   <h2>Book din tid</h2>
   <p>Online booking er tilgængelig døgnet rundt. Det er hurtigt og nemt at booke din tid.<br>
   Vælg din behandling, dato og tidspunkt online og modtag øjeblikkelig bekræftelse.</p>
-  <p><br><a href="tel:+4526216916" class="btn-primary">Book tid</a>
+  <p><br><a href="{{ site.booking }}" class="btn-primary" target="_blank">Book tid</a>
 </section>
 
 <section id="contact" class="contact">
@@ -129,18 +129,18 @@ site_name: Glossy Nails København
       <div class="contact-item">
         <h3>Adresse</h3>
         <address>
-          Virkelund Allé 5<br>
+          {{ site.street }} 5<br>
           2620 Albertslund, København<br>
           Danmark
         </address>
       </div>
       <div class="contact-item">
         <h3>Telefon</h3>
-        <p><a href="tel:+4526216916">+45 26 21 69 16</a></p>
+        <p><a href="tel:{{ site.phone| replace: ' ', '' }}">{{ site.phone }}</a></p>
       </div>
       <div class="contact-item">
         <h3>E-mail</h3>
-        <p><a href="mailto:nikol.kuzmikoba@gmail.com">nikol.kuzmikoba@gmail.com</a></p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       </div>
     </div>
 </section>
